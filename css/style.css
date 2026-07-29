@@ -6,7 +6,7 @@
   --paper-raised: #FFFFFF;
   --ink: #23241F;
   --ink-soft: #5B584C;
-  --ink-faint: #8B8778;
+  --ink-faint: #6B6754; /* was #8B8778 — 3.27:1, now 5.17:1 against paper */
   --line: #E1DDD0;
   --teal: #1F5C52;
   --teal-deep: #163F38;
