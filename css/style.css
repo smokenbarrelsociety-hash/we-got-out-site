@@ -1,0 +1,558 @@
+/* ============================================================
+   Design tokens
+   ============================================================ */
+:root {
+  --paper: #F6F4EE;
+  --paper-raised: #FFFFFF;
+  --ink: #23241F;
+  --ink-soft: #5B584C;
+  --ink-faint: #8B8778;
+  --line: #E1DDD0;
+  --teal: #1F5C52;
+  --teal-deep: #163F38;
+  --amber: #C98A3A;
+  --amber-soft: #E9C793;
+
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --max-w: 780px;
+  --max-w-wide: 1080px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--teal);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--teal-deep); }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 0.4em 0;
+  color: var(--ink);
+}
+
+p { margin: 0 0 1.1em 0; }
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  display: block;
+  margin-bottom: 0.9em;
+}
+
+/* ============================================================
+   Layout shell
+   ============================================================ */
+.wrap {
+  max-width: var(--max-w-wide);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.prose {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ============================================================
+   Header / nav
+   ============================================================ */
+.site-header {
+  padding: 28px 0 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.brand {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+.brand span { color: var(--teal); }
+
+nav.main-nav {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+nav.main-nav a {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+nav.main-nav a:hover,
+nav.main-nav a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: var(--amber);
+}
+
+/* ============================================================
+   Threshold divider — the signature element.
+   A line that moves from dark, through teal, into amber light.
+   Used prominently once per page (hero), thin and quiet elsewhere.
+   ============================================================ */
+.threshold {
+  height: 3px;
+  width: 100%;
+  border: none;
+  margin: 0;
+  background: linear-gradient(90deg, var(--ink) 0%, var(--teal) 45%, var(--amber) 100%);
+}
+.threshold.quiet {
+  height: 1px;
+  opacity: 0.55;
+}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero {
+  padding: 64px 0 46px;
+}
+.hero h1 {
+  font-size: clamp(2.1rem, 4.4vw, 3.1rem);
+  max-width: 15ch;
+}
+.hero .lede {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: 56ch;
+  margin-bottom: 2em;
+}
+.hero-foot {
+  margin-top: 34px;
+}
+
+/* ============================================================
+   Buttons / links-as-actions
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding: 11px 18px;
+  border-radius: 3px;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+.btn:hover { background: var(--ink); color: var(--paper); }
+.btn:active { transform: translateY(1px); }
+.btn.primary {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+}
+.btn.primary:hover { background: var(--teal-deep); border-color: var(--teal-deep); color: #fff; }
+
+/* ============================================================
+   Story cards
+   ============================================================ */
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 56px 0 22px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.section-head h2 { font-size: 1.5rem; }
+.section-head .see-all {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+.story-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-top: 3px solid transparent;
+  border-radius: 4px;
+  padding: 22px 22px 20px;
+  text-decoration: none;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  transition: border-top-color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+}
+.story-card:hover {
+  border-top-color: var(--amber);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(35,36,31,0.07);
+}
+.story-card .meta {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+.story-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.35em;
+}
+.story-card p {
+  color: var(--ink-soft);
+  font-size: 0.96rem;
+  margin-bottom: 0.6em;
+  flex-grow: 1;
+}
+.story-card .tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.tag {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--teal-deep);
+  background: rgba(31,92,82,0.09);
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+.sample-flag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  color: var(--amber);
+  border: 1px solid var(--amber-soft);
+  background: rgba(201,138,58,0.08);
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* ============================================================
+   Single story page
+   ============================================================ */
+.story-header {
+  padding: 48px 0 20px;
+}
+.story-header .meta {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+.story-header h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+.story-body {
+  padding-bottom: 60px;
+  font-size: 1.08rem;
+}
+.story-body p { margin-bottom: 1.3em; }
+
+.back-link {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  text-decoration: none;
+  display: inline-block;
+  margin: 26px 0 0;
+}
+
+/* ============================================================
+   Content sections (about/resources)
+   ============================================================ */
+.content-page { padding: 52px 0 70px; }
+.content-page h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin-bottom: 0.5em; }
+.content-page h2 {
+  font-size: 1.3rem;
+  margin-top: 2em;
+  padding-top: 0.6em;
+  border-top: 1px solid var(--line);
+}
+.content-page ul, .content-page ol { padding-left: 1.3em; }
+.content-page li { margin-bottom: 0.5em; }
+
+.resource-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--teal);
+  border-radius: 4px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+.resource-card.crisis { border-left-color: var(--amber); }
+.resource-card h3 { font-size: 1.05rem; margin-bottom: 0.3em; }
+.resource-card .rmeta {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+.verify-note {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  margin-top: 4px;
+}
+
+/* ============================================================
+   Glossary
+   ============================================================ */
+.glossary-search {
+  width: 100%;
+  max-width: 420px;
+  padding: 11px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 3px;
+  font-family: var(--sans);
+  font-size: 0.98rem;
+  background: var(--paper-raised);
+  color: var(--ink);
+  margin: 22px 0 8px;
+}
+.glossary-search::placeholder { color: var(--ink-faint); }
+
+.glossary-list { margin-top: 24px; }
+.glossary-entry {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.glossary-entry dt {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--teal-deep);
+  margin-bottom: 6px;
+}
+.glossary-entry dd {
+  margin: 0;
+  color: var(--ink-soft);
+}
+.glossary-empty {
+  color: var(--ink-faint);
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  padding: 20px 0;
+}
+
+/* ============================================================
+   Submission / footer
+   ============================================================ */
+.callout {
+  background: var(--teal);
+  color: #fff;
+  border-radius: 6px;
+  padding: 36px 34px;
+  margin: 50px 0;
+}
+.callout h2 { color: #fff; font-size: 1.5rem; }
+.callout p { color: rgba(255,255,255,0.86); max-width: 60ch; }
+.callout .btn { border-color: #fff; color: #fff; }
+.callout .btn:hover { background: #fff; color: var(--teal-deep); }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 30px 0 50px;
+  margin-top: 40px;
+}
+.site-footer .wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.site-footer p {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  margin: 0;
+}
+.footer-links { display: flex; gap: 20px; }
+.footer-links a {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+.footer-links a:hover { color: var(--teal); }
+
+/* ============================================================
+   Story submission form
+   ============================================================ */
+.story-form {
+  margin-top: 30px;
+}
+.form-field {
+  margin-bottom: 24px;
+}
+.form-field label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+}
+.form-field .hint {
+  font-family: var(--sans);
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 4px;
+}
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 3px;
+  font-family: var(--sans);
+  font-size: 1rem;
+  background: var(--paper-raised);
+  color: var(--ink);
+}
+.form-field textarea {
+  min-height: 320px;
+  resize: vertical;
+  line-height: 1.6;
+}
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: var(--ink-faint);
+}
+.checkbox-field {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.checkbox-field input[type="checkbox"] {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--teal);
+  flex-shrink: 0;
+}
+.checkbox-field label {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.hidden-field {
+  position: absolute;
+  left: -9999px;
+}
+.form-note {
+  background: rgba(31,92,82,0.07);
+  border: 1px solid rgba(31,92,82,0.18);
+  border-radius: 4px;
+  padding: 16px 18px;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  margin-bottom: 30px;
+}
+.thanks-page {
+  padding: 90px 0;
+  text-align: center;
+}
+.thanks-page .eyebrow { display: flex; justify-content: center; }
+
+/* ============================================================
+   Document pages (primary source scans)
+   ============================================================ */
+.doc-pages {
+  margin: 30px 0;
+}
+.doc-page {
+  margin: 0 0 28px 0;
+}
+.doc-page img {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  display: block;
+}
+.doc-page figcaption {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  text-align: center;
+  margin-top: 6px;
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 44px 0 32px; }
+  .callout { padding: 28px 22px; }
+}
+

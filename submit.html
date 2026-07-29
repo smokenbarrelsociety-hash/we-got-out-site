@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Share Your Story — Beyond the Standards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Beyond the <span>Standards</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="documents.html">Documents</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="submit.html" aria-current="page">Share Your Story</a>
+    </nav>
+  </div>
+</header>
+
+<div class="prose content-page">
+  <span class="eyebrow">Share your story</span>
+  <h1>Tell it in your own words</h1>
+  <p>Any length. Any level of detail. Publish under your real name or "Anonymous," your choice. Submissions go to us privately first, not straight to the site, so nothing appears until you'd want it to.</p>
+
+  <div class="form-note">Nothing here is published automatically. We read every submission and follow up if we have questions before anything goes live. If you'd rather email instead, you still can: <a href="mailto:wegotoutstories@proton.me">wegotoutstories@proton.me</a>.</div>
+
+  <form
+    name="story-submission"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/submitted.html"
+    class="story-form">
+
+    <input type="hidden" name="form-name" value="story-submission">
+
+    <p class="hidden-field">
+      <label>Don't fill this out if you're human: <input name="bot-field"></label>
+    </p>
+
+    <div class="form-field">
+      <label for="display-name">Name to publish under</label>
+      <input type="text" id="display-name" name="display-name" placeholder="Anonymous, a first name, or your full name">
+      <span class="hint">Leave blank and we'll publish as "Anonymous."</span>
+    </div>
+
+    <div class="form-field">
+      <label for="email">Your email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+      <span class="hint">Optional. Only used if we have a question before publishing. Never shown on the site.</span>
+    </div>
+
+    <div class="form-field">
+      <label for="title">Story title</label>
+      <input type="text" id="title" name="title" placeholder="Give your story a title" required>
+    </div>
+
+    <div class="form-field">
+      <label for="tags">Tags</label>
+      <input type="text" id="tags" name="tags" placeholder="e.g. Shunning, Deputation, Bible College">
+      <span class="hint">Optional, comma-separated. Helps readers find stories like theirs.</span>
+    </div>
+
+    <div class="form-field">
+      <label for="story">Your story</label>
+      <textarea id="story" name="story" placeholder="Write it however it comes out. We're not editing for style, only typos, unless you ask us to." required></textarea>
+    </div>
+
+    <div class="checkbox-field">
+      <input type="checkbox" id="consent" name="consent" value="yes" required>
+      <label for="consent">I'm submitting this to be published on Beyond the Standards, and understand it may be lightly edited for typos unless I ask for other changes.</label>
+    </div>
+
+    <button type="submit" class="btn primary">Submit your story</button>
+  </form>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Beyond the Standards &middot; a survivor-run project, not affiliated with any church</p>
+    <div class="footer-links">
+      <a href="resources.html">Resources</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+<script data-goatcounter="https://wegotout.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
