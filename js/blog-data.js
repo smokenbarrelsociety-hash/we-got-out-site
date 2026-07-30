@@ -1,13 +1,35 @@
 const POSTS = [
   {
-    id: "why-we-built-this-site",
-    title: "Why We Built This Site",
+    id: "reading-between-the-lines-sermon-breakdown",
+    title: "Reading Between the Lines: A Sermon Breakdown",
+    subtitle: "How a message on Romans 12:1-2 quietly does the work of standards culture",
     date: "2026-07-30",
-    tags: ["Site Updates"],
-    excerpt: "A short note on why this project exists, who it's for, and what's changing as it grows.",
+    tags: ["Sermon Analysis", "Standards Preaching", "Red Flags", "Glossary"],
+    excerpt: "A line-by-line breakdown of a real sermon transcript, showing how the machinery of high-control religion runs quietly inside a completely ordinary-sounding message.",
     body: [
-      `Replace this with your first real post. It can be a launch announcement, something you're learning as you build this, or context that doesn't fit neatly into a single survivor story.`,
-      `Unlike the Stories section, posts here are written by us, not submitted by contributors.`
+      `If you grew up in an independent fundamental Baptist church, you know this sermon before you finish the first paragraph. It isn't shouted. Nobody's slamming a Bible on the pulpit. It's built almost entirely out of Romans 12:1-2, "present your bodies a living sacrifice," a text plenty of Christian traditions preach without incident. That's what makes it worth slowing down on. The theology on the surface is unremarkable. The mechanism underneath it is not.`,
+      `We're breaking down a real sermon transcript line by line, the same way we've been building out the glossary, not to mock the preacher or the text, but to show how the machinery of high-control religion runs quietly inside completely ordinary-sounding sermons. If you're newer to deconstruction, this is often the hardest part to explain to people who never lived it: nothing here sounds obviously abusive. That's exactly the point.`,
+      { type: "heading", text: "1. Salvation anxiety, smuggled into a stewardship point" },
+      `About twenty minutes in, in the middle of a paragraph about gratitude, the pastor says this almost as an aside:`,
+      { type: "quote", text: `"Because if we don't, we're going to hell. That's serious."` },
+      `Read that again in context. He isn't talking about salvation at that moment, he's talking about presenting your body as a living sacrifice, an act of Christian devotion Paul addresses to people he already calls "brethren." And yet hell gets attached to it anyway.`,
+      `This is the single most important thing to flag in the whole message. It's the mechanism we've called works-based assurance elsewhere on this site: sanctification (how well you're living out your faith) gets quietly re-fused to justification (whether you were ever saved at all). The listener is left unable to cleanly separate "I'm struggling to live this out" from "maybe I was never really saved." That ambiguity isn't an accident of loose preaching, it's the engine that keeps people in the pews compliant long after the fear of hell should have stopped being relevant to them.`,
+      { type: "heading", text: "2. External conformity as the proof of an internal state" },
+      `The pastor spends several minutes on "be not conformed to this world," and the examples he reaches for are telling:`,
+      { type: "quote", text: `"...I see all the tattoos... not just on the men... but the women as well... Tattoos on their necks, tattoos on their faces."` },
+      `He arrives there by way of a story about spirit mediums in Southeast Asia with hooks and rings through their skin, and then, in the same breath, pivots to American women with ink. The rhetorical move collapses two very different things (ritual self-mutilation tied to spirit worship, and a tattoo) into a single category: worldliness, visible on the body.`,
+      `This is standards preaching in its purest form. Romans 12:2 is about the renewing of the mind, Paul's own language, which the sermon quotes directly, but the applied example is entirely about appearance. That's the tell to watch for generally: when a text about internal transformation gets illustrated almost exclusively with external markers (clothing, ink, piercings, hair), the sermon has quietly swapped the actual claim of the passage for a dress code. It's also worth noting who bears the weight of that appearance policing here, the pastor's language singles out women ("it's not just the men... but the women as well") in a way it doesn't for men.`,
+      { type: "heading", text: "3. Total surrender, with no room drawn for disagreement" },
+      `Language throughout the message asks for complete surrender, "my mind, my will, my physical body, my personality, and my emotions," handed over as evidence of genuine submission. That's not unusual in itself in devotional Christian writing. What's missing is any acknowledgment that a sincere believer might land somewhere different from the pastor and still be walking with God in good conscience.`,
+      `There's no "here's where thoughtful Christians disagree" anywhere in this message. Deviation from the standard being preached isn't framed as a legitimate difference of conviction, it's framed as unresolved rebellion, still-conformed-to-the-world thinking. That absence of nuance is doing quiet work: it pre-closes the door on the listener ever concluding, "I've thought this through and I disagree," because the sermon has already defined disagreement as spiritual immaturity.`,
+      { type: "heading", text: "4. The guilt loop" },
+      `Notice how often the sermon turns back on the listener with a question they cannot pass:`,
+      { type: "quote", text: `"Did I this morning have the thought that God wanted me to live my life well pleasing to him today?"` },
+      { type: "quote", text: `"I wonder tonight how many of us could really lift our hands and say, 'Yes, I'm maturing.'"` },
+      `Nobody in the room can honestly answer yes to these with full confidence, that's what makes them effective. They aren't really questions; they're a low-grade guilt induction that resets every service, so the congregation stays in a state that only the next sermon, the next altar call, the next "recommitment" can temporarily relieve. It's not fire and brimstone. It's something quieter and more durable: a permanent sense of falling short that never quite resolves.`,
+      { type: "heading", text: "What's notably not here" },
+      `In fairness, this sermon is milder than a lot of what shows up in survivor stories on this site. There's no explicit soul-winning quota pressure, no direct "obey your pastor" language, no overt separation doctrine naming other churches or denominations as compromised. It reads more like standard old-school holiness preaching than cult-of-personality control. That distinction matters, not every high-control marker shows up in every sermon, and it's worth being precise about which ones are actually present rather than flattening everything into "cult sermon." The tattoo tangent and the offhand hell line are the two moments that do the real work here, and they're worth being able to name specifically if you're trying to explain to someone, a spouse, a therapist, yourself five years ago, why a sermon that sounds so ordinary left you anxious for a week.`,
+      { type: "html", text: `<p><em>If you recognize this pattern from your own church experience, you're not imagining it. Check out our <a href="glossary.html">glossary</a> for more terms like "standards preaching" and "works-based assurance," or <a href="submit.html">share your story</a> if you'd like it included on this site.</em></p>` }
     ]
   }
 ];
