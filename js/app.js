@@ -200,7 +200,13 @@ function renderPostGrid(containerId, limit) {
   }
   el.innerHTML = list.map(postCardHTML).join("");
 }
-
+function postBlockHTML(block) {
+  if (typeof block === "string") return `<p>${escapeHTML(block)}</p>`;
+  if (block.type === "heading") return `<h2>${escapeHTML(block.text)}</h2>`;
+  if (block.type === "quote") return `<blockquote>${escapeHTML(block.text)}</blockquote>`;
+  if (block.type === "html") return block.text; // trusted, author-written only
+  return `<p>${escapeHTML(block.text)}</p>`;
+}
 function renderSinglePost() {
   const el = document.getElementById("post-container");
   if (!el) return;
@@ -221,12 +227,13 @@ function renderSinglePost() {
 
   document.title = post.title;
   const tags = (post.tags || []).map(t => `<span class="tag">${escapeHTML(t)}</span>`).join("");
-  const body = post.body.map(p => `<p>${escapeHTML(p)}</p>`).join("");
+  const body = post.body.map(postBlockHTML).join("");
 
   el.innerHTML = `
     <div class="prose story-header">
       <div class="meta">${formatDate(post.date)}</div>
       <h1>${escapeHTML(post.title)}</h1>
+      ${post.subtitle ? `<p class="post-subtitle">${escapeHTML(post.subtitle)}</p>` : ""}
       <div class="tags">${tags}</div>
     </div>
     <div class="prose story-body">
