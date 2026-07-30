@@ -555,4 +555,17 @@ nav.main-nav a[aria-current="page"] {
   .hero { padding: 44px 0 32px; }
   .callout { padding: 28px 22px; }
 }
-
+.post-subtitle {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin-top: -0.3em;
+  margin-bottom: 0.8em;
+}
+.story-body blockquote {
+  border-left: 3px solid var(--amber);
+  margin: 1.4em 0;
+  padding: 0.3em 0 0.3em 1.2em;
+  font-style: italic;
+  color: var(--ink);
+}
