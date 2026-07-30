@@ -68,7 +68,6 @@ const POSTS = [
     id: "a-lot-depends-on-you-forgiveness-sermon",
     title: "A Lot Depends on You",
     subtitle: "A sermon on forgiveness that's mostly sound pastoral counsel, and where it quietly slides toward performance",
-    date: "2026-08-01",
     tags: ["Sermon Analysis", "Forgiveness Theology", "Guilt and Shame", "Family Estrangement"],
     excerpt: "A breakdown of a sermon on unforgiveness, Hebrews 12, that's largely healthy pastoral teaching, and a look at the two places where forgiveness quietly gets tied back to salvation anxiety and collective guilt.",
     body: [
