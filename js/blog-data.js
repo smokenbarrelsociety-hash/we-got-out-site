@@ -37,7 +37,7 @@ const POSTS = [
     id: "the-reaping-sermon-and-the-cult-word",
     title: "The Word They Weren't Supposed to Say Out Loud",
     subtitle: "A Galatians 6 sermon on 'reaping what you sow' — and the moment the preacher named the accusation everyone's been thinking",
-    date: "2026-07-31",
+    date: "2026-07-30",
     tags: ["Sermon Analysis", "Fear-Based Preaching", "Church Discipline", "Red Flags"],
     excerpt: "A breakdown of a sermon on Galatians 6 built around 'you reap what you sow' — including a striking moment where the preacher names the word 'cult' himself, right before dismissing anyone who'd use it.",
     body: [
@@ -68,6 +68,7 @@ const POSTS = [
     id: "a-lot-depends-on-you-forgiveness-sermon",
     title: "A Lot Depends on You",
     subtitle: "A sermon on forgiveness that's mostly sound pastoral counsel, and where it quietly slides toward performance",
+    date: "2026-07-30",
     tags: ["Sermon Analysis", "Forgiveness Theology", "Guilt and Shame", "Family Estrangement"],
     excerpt: "A breakdown of a sermon on unforgiveness, Hebrews 12, that's largely healthy pastoral teaching, and a look at the two places where forgiveness quietly gets tied back to salvation anxiety and collective guilt.",
     body: [
