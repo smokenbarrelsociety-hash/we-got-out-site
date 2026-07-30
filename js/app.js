@@ -172,7 +172,68 @@ function renderSingleDocument() {
       <a class="back-link" href="documents.html">&larr; Back to all documents</a>
     </div>`;
 }
+// ---------- blog ----------
+function sortedPosts() {
+  if (typeof POSTS === "undefined") return [];
+  return [...POSTS].sort((a, b) => new Date(b.date) - new Date(a.date));
+}
 
+function postCardHTML(post) {
+  const tags = (post.tags || []).map(t => `<span class="tag">${escapeHTML(t)}</span>`).join("");
+  return `
+    <a class="story-card" href="post.html?id=${encodeURIComponent(post.id)}">
+      <div class="meta">${formatDate(post.date)}</div>
+      <h3>${escapeHTML(post.title)}</h3>
+      <p>${escapeHTML(post.excerpt)}</p>
+      <div class="tags">${tags}</div>
+    </a>`;
+}
+
+function renderPostGrid(containerId, limit) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  let list = sortedPosts();
+  if (limit) list = list.slice(0, limit);
+  if (list.length === 0) {
+    el.innerHTML = `<p class="glossary-empty">No posts yet.</p>`;
+    return;
+  }
+  el.innerHTML = list.map(postCardHTML).join("");
+}
+
+function renderSinglePost() {
+  const el = document.getElementById("post-container");
+  if (!el) return;
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const post = POSTS.find(p => p.id === id);
+
+  if (!post) {
+    el.innerHTML = `
+      <div class="prose story-header">
+        <h1>Post not found</h1>
+        <p>We couldn't find that post. It may have been moved or the link may be incorrect.</p>
+        <a class="back-link" href="blog.html">&larr; Back to all posts</a>
+      </div>`;
+    document.title = "Post not found";
+    return;
+  }
+
+  document.title = post.title;
+  const tags = (post.tags || []).map(t => `<span class="tag">${escapeHTML(t)}</span>`).join("");
+  const body = post.body.map(p => `<p>${escapeHTML(p)}</p>`).join("");
+
+  el.innerHTML = `
+    <div class="prose story-header">
+      <div class="meta">${formatDate(post.date)}</div>
+      <h1>${escapeHTML(post.title)}</h1>
+      <div class="tags">${tags}</div>
+    </div>
+    <div class="prose story-body">
+      ${body}
+      <a class="back-link" href="blog.html">&larr; Back to all posts</a>
+    </div>`;
+}
 // ---------- nav active state ----------
 function markActiveNav() {
   const path = window.location.pathname.split("/").pop() || "index.html";
@@ -192,4 +253,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initGlossarySearch();
   renderDocumentGrid("document-grid");
   renderSingleDocument();
+  renderPostGrid("blog-post-grid");
+  renderSinglePost();
 });
