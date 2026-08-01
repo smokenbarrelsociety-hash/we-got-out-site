@@ -89,7 +89,7 @@ const POSTS = [
       `To be fair to this message: there's no chain-of-command language, no dress code, no separation doctrine, no equating disagreement with witchcraft, none of the harsher markers from the sermons we've broken down before. The core teaching, don't let bitterness calcify, be gentle with people who are struggling, is something a healthy church could preach in a healthy way. The concerns here are narrower and more specific: the quiet re-linking of forgiveness to salvation security, the diffuse guilt of "a lot depends on you," and the compressed timeline for forgiving real abuse. If you recognize the first two, that's the same pattern from other breakdowns wearing a gentler voice. If you recognize the third, that's worth naming on its own: being told your anger at what was done to you, or to someone you love, is the spiritual problem to solve.`,
       { type: "html", text: `<p><em>If any part of this sounds familiar, you're not imagining it. Browse the <a href="glossary.html">glossary</a> for related terms, or <a href="submit.html">share your story</a> if you'd like it included here.</em></p>` }
     ]
-  }
+  },
 {
     id: "the-mechanics-of-shunning",
     title: "The Mechanics of Shunning",
