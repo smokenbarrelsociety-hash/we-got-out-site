@@ -113,5 +113,32 @@ const POSTS = [
       `If you're reading this because you've been shunned, or you're watching it start to happen and don't yet have a name for what you're seeing: it isn't a fair fight, it was never designed to be one, and the fact that it worked on people who love you doesn't mean what happened to you was small.`,
       { type: "html", text: `<p><em>Our <a href="glossary.html">glossary</a> has a fuller entry on shunning specifically, and several stories on this site describe it firsthand. If you'd like to share your own experience, <a href="submit.html">the submission form</a> is anonymous by default.</em></p>` }
     ]
+  },
+  {
+    id: "james-4-17-guilt-machine",
+    title: "How James 4:17 Became a Guilt Machine",
+    subtitle: "\"To him that knoweth to do good, and doeth it not, to him it is sin\" — what the verse actually argues, and how it gets stripped down into an unmeetable standard",
+    date: "2026-08-03",
+    tags: ["Scripture Analysis", "Guilt and Shame", "Legalism", "Glossary"],
+    excerpt: "A verse that sounds like a blank check for endless obligation is actually a specific correction about arrogance and control. A look at what James 4:17 says in context, and how removing that context turns it into a tool for permanent guilt.",
+    body: [
+      `If you spent any time in a high-control group, you've probably had this verse used on you, or used it on yourself:`,
+      { type: "quote", text: `"Therefore to him that knoweth to do good, and doeth it not, to him it is sin." (James 4:17)` },
+      `On its own, it sounds like a blank check for obligation: any good you can imagine doing, and didn't do, is sin. That reading turns the verse into a perfect tool for control, because there is always more good you could theoretically have done. More visits. More outreach. More sacrifice. More silence about your doubts. It's a standard that can never be satisfied, which is exactly what makes it so useful to people who want you to feel perpetually behind.`,
+      `But that's not what the verse is doing. And once you see what it's actually doing, it stops working as a weapon.`,
+      { type: "heading", text: "What James Is Actually Talking About" },
+      `Verse 17 doesn't stand alone, it's the punchline to the paragraph right before it (4:13-16). James is talking to merchants who plan their business with total confidence and zero acknowledgment that they don't control the future:`,
+      { type: "quote", text: `"Go to now, ye that say, To day or to morrow we will go into such a city, and continue there a year, and buy and sell, and get gain... Whereas ye know not what shall be on the morrow."` },
+      `His correction isn't "do more good deeds." It's: say "if the Lord will, we shall live, and do this, or that" instead of presuming you're the one steering your own future. He calls that presumption what it is, arrogance: "ye rejoice in your boastings: all such rejoicing is evil."`,
+      `Verse 17 is the summary line on that. The "good" in view is the posture of humility and dependence James just described, not a generic stand-in for every virtuous act you failed to perform. Knowing you should hold your plans loosely under God's will, and instead boasting in your own control, that's the sin being named.`,
+      { type: "heading", text: "Why This Matters If You Grew Up Under Legalism" },
+      `High-control environments love decontextualized proof-texts, because a verse stripped of its argument can be redeployed for whatever behavior needs enforcing that week. "You knew you could've done more, so you sinned" is an incredibly effective way to keep someone in a permanent low-grade state of guilt, and it works precisely because the target rarely gets shown what the verse is actually arguing.`,
+      `This isn't an isolated case. It's a pattern: take a specific, bounded statement, remove the paragraph that gives it its edges, and suddenly it applies to everything. The verse goes from "don't be arrogant about controlling your future" to "you are constantly failing some invisible, ever-expanding standard of good you should be doing."`,
+      `It's worth saying plainly: some scholars do argue James's short, proverb-like statements function as summaries of broader themes running through the chapter, pride, self-assertion, judging others, not just the paragraph directly above them. That's a fair reading. But even on that wider view, the theme is still humility versus self-reliance. It's not a mandate that every unfulfilled good deed is a sin. The version used to manufacture guilt isn't just narrower-than-context, it's a different claim entirely.`,
+      { type: "heading", text: "The Bigger Pattern" },
+      `If you're doing the work of examining what you were taught, this is a useful test to run on any verse that was used to keep you compliant: what's the actual argument surrounding it? What specific behavior was the author actually addressing? Almost every "gotcha" verse used for control starts making a lot more sense, and a lot less totalizing, once you put the fence posts back up around it.`,
+      `You're allowed to ask what a verse actually says. That's not rebellion. That's just reading.`,
+      { type: "html", text: `<p><em>More breakdowns like this live on the <a href="blog.html">blog</a>, and related terms are in the <a href="glossary.html">glossary</a>. If you'd like to share your own story, <a href="submit.html">the submission form</a> is anonymous by default.</em></p>` }
+    ]
   }
 ];
