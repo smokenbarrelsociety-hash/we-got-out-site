@@ -82,5 +82,19 @@ const STORIES = [
       `If someone reading our story recognizes even a small part of their own experience, our hope is that they will know they are not alone. Ask questions. Read Scripture for yourself. Trust that God is not threatened by an honest search for truth. Healthy spiritual leadership will always point people to Christ, not to itself.`,
       `If sharing our story helps even one person find that freedom, then every difficult word has been worth writing.`
     ]
+  },
+  {
+    id: "a-rebel-without-a-cause",
+    title: "A Rebel Without a Cause",
+    author: "Anonymous",
+    date: "2026-08-05",
+    tags: ["Legalism"],
+    excerpt: "A hospital worker on the gap between 'saved by grace, not works' and being quietly judged for missing church on a work weekend, and growing his hair out just to make a point.",
+    body: [
+      `I used to go to an IFB church. I have no problem with what they believe, and I still say there is much to be admired about them. What I did have a problem with was the legalism. They say we're saved by grace and not by works, but live the opposite.`,
+      `I worked every other weekend, hospital work is like that, and there was one person always making snide remarks that I wasn't in church last Sunday. I was never in church last Sunday, I had to work! I rarely dressed the part, and was never asked to participate beyond attending and putting my part in the offering plate. I was, though, cordially invited to not be a Sunday school teacher.`,
+      `I'm a bit of a rebel without a cause, so I grew my hair (I'm male) down to the middle of my back just to tweak the legalists.`,
+      `If you have a problem with some religious people, don't let that get in the way of your walk with God. Jesus had a problem with religious people, they crucified Him.`
+    ]
   }
 ];
