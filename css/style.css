@@ -580,3 +580,10 @@ nav.main-nav a[aria-current="page"] {
   text-decoration: none;
 }
 .cta-primary:hover { background: var(--teal-deep); }
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.footer-social svg { width: 16px; height: 16px; fill: var(--ink-soft); }
+.footer-social:hover svg { fill: var(--teal-deep); }
