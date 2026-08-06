@@ -140,5 +140,30 @@ const POSTS = [
       `You're allowed to ask what a verse actually says. That's not rebellion. That's just reading.`,
       { type: "html", text: `<p><em>More breakdowns like this live on the <a href="blog.html">blog</a>, and related terms are in the <a href="glossary.html">glossary</a>. If you'd like to share your own story, <a href="submit.html">the submission form</a> is anonymous by default.</em></p>` }
     ]
+  },
+  {
+    id: "what-legalism-actually-is",
+    title: "What Legalism Actually Is",
+    subtitle: "Not \"taking the Bible too seriously\" — a specific mechanism for turning belonging into a performance",
+    date: "2026-08-06",
+    tags: ["Legalism", "Guilt and Shame", "Glossary", "Church Discipline"],
+    excerpt: "Legalism gets used loosely, as a stand-in for 'strict' or 'old-fashioned.' It's more specific than that, and understanding the mechanism is what makes it possible to name what happened without rejecting faith itself.",
+    body: [
+      `"Legalism" shows up in almost every story on this site, but it rarely gets defined. People use it as a stand-in for "strict," or "old-fashioned," or "the dress code stuff." It's more specific than that, and the specific version is worth naming, because understanding the mechanism is what makes it possible to describe what happened to you without having to reject faith itself to do it.`,
+      { type: "heading", text: "It's not about having rules" },
+      `Every community has norms. Every tradition, religious or not, has expectations about behavior. That alone isn't legalism. Legalism is a specific move: taking a rule, a practice, or a preference, and quietly attaching your standing, spiritual, relational, sometimes literal, to how well you keep it.`,
+      `The technical theological version of this critique is old. Paul's letter to the Galatians is largely an argument against it: a group insisting that outward compliance (in that case, circumcision) was necessary on top of faith. His response wasn't "rules don't matter." It was that make the rule the measure of your standing, and you've quietly swapped grace for performance, whether or not anyone ever says that out loud.`,
+      { type: "heading", text: "Why it's so hard to spot from inside it" },
+      `Legalism rarely announces itself as legalism. Nobody stands up and says "your worth here depends on this specific behavior." It usually gets transmitted the way we've described it showing up in sermon breakdowns on this blog: through repetition, through what gets illustrated versus what gets left abstract, through whose face changes when a rule gets broken. A single verse about "the renewing of the mind" gets illustrated entirely through tattoos and clothing. A verse about avoiding arrogance about the future gets flattened into "any good deed you didn't do is sin." The theology on paper is often defensible. The application is where it turns into legalism.`,
+      `That's also why it's so disorienting to name from inside it. If you ask "is this legalism?" and the answer you get is a theological explanation of why the rule is biblical, you haven't actually gotten an answer, because legalism was never really a debate about whether the rule is defensible. It's about whether your standing, in the group, in the family, sometimes even in your own sense of whether you're saved, depends on it.`,
+      { type: "heading", text: "The tell: what happens when someone doesn't comply" },
+      `Here's a genuinely useful test. Healthy conviction and legalism can look identical when everyone's complying. They stop looking identical the moment someone doesn't.`,
+      `In a healthy structure, someone landing somewhere different, dressing differently, skipping a practice, disagreeing with a teaching, is met with, at most, disagreement. In a legalistic structure, it's met with a shift in how that person is treated: cooler, more distant, spoken of differently, quietly reclassified from "one of us" to "someone we're concerned about." The rule was never really the point. The rule was the mechanism for sorting who's in.`,
+      `If you're trying to figure out whether something you grew up in was legalistic, this is often a clearer question than "were there a lot of rules." Ask instead: what happened to people who broke one?`,
+      { type: "heading", text: "Why this distinction matters for leaving" },
+      `A lot of people leaving high-control religious environments end up in one of two places: either rejecting the whole framework of faith along with the legalism, or staying inside a system they know is hurting them because they can't separate the harm from the belief itself. Neither is a failure of reasoning. It's what happens when legalism has successfully fused "the rules" and "the faith" into one object for years.`,
+      `They were never actually the same object. You can think a specific practice was used to control you and still hold, reject, or remain uncertain about the larger faith it was wrapped in. Those are two different questions, and legalism spent years making sure you never got to ask them separately.`,
+      { type: "html", text: `<p><em>Related terms are in the <a href="glossary.html">glossary</a>, and several stories on this site describe legalism directly. If you'd like to share your own experience, <a href="submit.html">the submission form</a> is anonymous by default.</em></p>` }
+    ]
   }
 ];
