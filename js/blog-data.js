@@ -165,5 +165,33 @@ const POSTS = [
       `They were never actually the same object. You can think a specific practice was used to control you and still hold, reject, or remain uncertain about the larger faith it was wrapped in. Those are two different questions, and legalism spent years making sure you never got to ask them separately.`,
       { type: "html", text: `<p><em>Related terms are in the <a href="glossary.html">glossary</a>, and several stories on this site describe legalism directly. If you'd like to share your own experience, <a href="submit.html">the submission form</a> is anonymous by default.</em></p>` }
     ]
+  },
+  {
+    id: "dont-trust-yourself-proverbs-3",
+    title: "Reading Between the Lines: \"Don't Be Impressed With Your Own Wisdom\"",
+    subtitle: "How a message on Proverbs 3 quietly teaches you not to trust your own mind",
+    date: "2026-08-07",
+    tags: ["Sermon Analysis", "Epistemic Distrust", "Red Flags", "Glossary"],
+    excerpt: "A quiet, unshouted message on Proverbs 3 that never mentions authority or obedience directly, and does something more durable instead: teaches the room not to trust its own judgment at all.",
+    body: [
+      `This one doesn't sound alarming. There's no shouting, no altar call built on fear, no explicit chain of command laid out from pulpit to pew. It's a quiet, almost meandering message on Proverbs 3, trust in the Lord, lean not on your own understanding, honor Him with your wealth. If you didn't grow up in it, you might not hear anything unusual at all. That's exactly why it's worth breaking down.`,
+      { type: "heading", text: "The verse, and what gets done with it" },
+      `Proverbs 3:5-7 is familiar territory in most Christian traditions: trust God, hold your own understanding loosely, don't be wise in your own eyes. Read plainly, it's counsel toward humility, a caution against overconfidence, not a ban on independent thought.`,
+      `This sermon pushes past that. The phrase "don't be impressed with your own wisdom" repeats four separate times over the course of the message, and by the end it's no longer just a caution about pride. It becomes a flat moral equation, stated outright:`,
+      { type: "quote", text: `If I'm trusting in my wisdom, and you're trusting in your wisdom, it's evil.` },
+      `That's a different claim than the text makes. Humility about your own judgment is one thing. Being told that using your own judgment at all puts you in the category of evil is another. The first invites self-awareness. The second teaches you to distrust the mechanism you'd need to notice something was wrong in the first place, including something wrong with the room you're sitting in.`,
+      { type: "heading", text: "The turn at the end: discipline as proof of love" },
+      `The sermon closes on Proverbs 3:11-12, the Lord disciplines those He loves, punishes those He accepts as sons. Standard material on its own. But it's where the message chooses to land, and the framing given to it matters:`,
+      { type: "quote", text: `He even punishes those He accepts as His children.` },
+      `Said once, in isolation, this is unremarkable pastoral care, a way of making sense of hardship. Said as the closing thought of a sermon that spent thirty minutes teaching the room not to trust its own judgment, it does something more specific. It preemptively reframes whatever hardship, correction, or suffering a listener might later experience, inside or outside the church, as evidence they're loved, not evidence something is wrong. If you've already been taught not to trust your own read of a situation, and then taught that pain itself is proof of favor, there's very little room left to correctly identify harm as harm.`,
+      { type: "heading", text: "The quieter thread: provision tied to obedience" },
+      `Woven into the honor-the-Lord-with-your-wealth material is a personal anecdote, a season on the mission field, wondering what there'd be to eat that night, offered as evidence that provision came because they were "on the path God had for us." It's never stated as a formula outright, but the implication sits right under the surface: obey and give, and needs get met. Struggle, and the question of whether you're really on the right path is right there waiting.`,
+      { type: "heading", text: "The unplanned example" },
+      `Partway through, unprompted, there's a personal aside: a son who is "so lost," "very much out of God's will." It's mentioned once, briefly, then folded straight back into the discipline-as-love material. Whether or not it was intended this way, it functions as a live illustration sitting inside the "two paths" framework the whole sermon is built around, a real person, in real time, held up as the cautionary example of the wrong path.`,
+      { type: "heading", text: "Why this one is worth naming" },
+      `Compared to messages built more visibly around authority and standards, this sermon is mild. There's no direct claim that the pastor speaks for God, no separation language, no explicit obedience-to-leadership material. That's precisely what makes it a useful case study. The control isn't in the structure of the institution here, it's in the epistemics. Teach someone, gently and repeatedly, that their own reasoning is suspect by definition, and you don't need to tell them what to conclude. You've already removed the tool they'd use to check your conclusions against their own sense of things.`,
+      `That's worth having language for. Not every red flag sounds like control. Some of them sound like humility.`,
+      { type: "html", text: `<p><em>If this sounds like sermons you grew up with, you're not imagining it. <a href="submit.html">Share your story</a> or check the <a href="glossary.html">glossary</a> for more on how these patterns show up in everyday IFB preaching.</em></p>` }
+    ]
   }
 ];
