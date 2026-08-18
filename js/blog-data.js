@@ -193,5 +193,34 @@ const POSTS = [
       `That's worth having language for. Not every red flag sounds like control. Some of them sound like humility.`,
       { type: "html", text: `<p><em>If this sounds like sermons you grew up with, you're not imagining it. <a href="submit.html">Share your story</a> or check the <a href="glossary.html">glossary</a> for more on how these patterns show up in everyday IFB preaching.</em></p>` }
     ]
+  },
+    {
+    id: "were-you-miserable-enough",
+    title: "Were You Miserable Enough? The Hidden Requirement in \"Salvation by Grace Alone\"",
+    subtitle: "A sermon that rejects works-righteousness with its mouth while quietly requiring a specific emotional experience to prove you're saved",
+    date: "2026-08-08",
+    tags: ["Sermon Analysis", "Salvation Anxiety", "Red Flags", "Glossary"],
+    excerpt: "This sermon says all the right words about grace, not works. But underneath the official requirement, a different one gets installed: not a doctrine, but a testimony, a specific feeling you need to have had.",
+    body: [
+      `This sermon says all the right words. Salvation isn't earned. It's not by works. Not by baptism, not by church attendance, not by being good to your neighbor. "It is the gift of God... not the results of what anyone can do so that no one can boast of it." If you only read the doctrinal statements out loud, you'd hear straightforward, orthodox grace theology.`,
+      `But sit through the whole thing, and a different requirement gets installed underneath the official one. It's just not called a requirement. It's called a testimony.`,
+      { type: "heading", text: "Everyone's status stays in play" },
+      `The sermon is framed as a message to Christians, "he's speaking to the one that is saved, the one that is born again." But it doesn't stay there. Again and again, mid-thought, it pivots:`,
+      { type: "quote", text: `If you're here today and you're not saved, listen to this.` },
+      `By the end, there's a direct address that doesn't leave much room for ambiguity:`,
+      { type: "quote", text: `Shame on you if you're not saved today.` },
+      `The stated audience and the actual audience being addressed keep shifting throughout. That's worth naming as its own thing, separate from any one scary line. If a sermon is nominally about assurance for believers but keeps interrupting itself to address the lost, nobody in the room, saved or not, gets to relax for long. Everyone's status stays open for renegotiation, sermon after sermon.`,
+      { type: "heading", text: "The line underneath the line" },
+      `Here's the part that matters most. Partway through, the preacher tells his own conversion story: kneeling on the shoulder of a public road, weeping, later going forward at a revival altar. A real memory, told with real feeling. Then it gets generalized:`,
+      { type: "quote", text: `Shame on you if you're not saved today. That there hasn't been a time in your life you got miserable.` },
+      `Read that again next to the sermon's own claim, made more than once, that salvation is by grace, not works, "not of anything that you have done." Those two things don't sit easily together. If salvation genuinely isn't about anything you've done, then it can't require a specific feeling you've had, either. But that's exactly what's being asked for, not the doctrine, but the door built into it. Reject the false assurance of good behavior, sure. But swap in a different false assurance: did you feel bad enough, in the right way, at some point you can point to?`,
+      `For anyone raised in this kind of preaching, this is worth sitting with for a minute. If you can't locate a moment of that particular kind of misery in your own memory, or if your path to faith, or away from it, or through doubt, simply didn't look like that, the sermon has already told you what that means about you. Not because the doctrine says so. Because the testimony does.`,
+      { type: "heading", text: "Borrowed urgency" },
+      `Woven into this is a passing reference to a "prominent politician" who died the week before, and "a neighbor on the street," offered as a reminder of how suddenly life ends. It's a small aside, but it's doing a specific job: attaching real, current grief to a decision the sermon wants made now. Death is real and sudden, and that's true regardless of anyone's theology. But invoking it here isn't really about mourning the neighbor. It's borrowed urgency, laid on top of a message that already has you wondering whether your own experience was sufficient.`,
+      { type: "heading", text: "Why this one is worth sitting with" },
+      `There's nothing here about standards, appearance, or submission to leadership, nothing that would register on the more familiar list of red flags. If anything, this sermon is more theologically careful than most about denying that works save anyone. That's exactly what makes it worth slowing down for. The control isn't in what the sermon tells you to do. It's in what it tells you your own past has to have felt like for your salvation to count. That's a much harder thing to argue with, because it isn't phrased as a rule. It's phrased as somebody's honest testimony, which makes it feel like an invitation, not a requirement, even when it's functioning as one.`,
+      `If you grew up measuring your salvation against someone else's tears at an altar, that's not a small thing to unlearn. It's also not evidence that anything was wrong with you.`,
+      { type: "html", text: `<p><em>If this sounds familiar, you're not alone in it. <a href="submit.html">Share your story</a> or check the <a href="glossary.html">glossary</a> for more on how assurance gets weaponized in high-control preaching.</em></p>` }
+    ]
   }
 ];
