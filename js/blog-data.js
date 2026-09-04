@@ -222,7 +222,7 @@ const POSTS = [
       `If you grew up measuring your salvation against someone else's tears at an altar, that's not a small thing to unlearn. It's also not evidence that anything was wrong with you.`,
       { type: "html", text: `<p><em>If this sounds familiar, you're not alone in it. <a href="submit.html">Share your story</a> or check the <a href="glossary.html">glossary</a> for more on how assurance gets weaponized in high-control preaching.</em></p>` }
     ]
-  }
+  },
     {
     id: "when-scripture-is-weaponized",
     title: "The Verse They Used Against You Was Never the Whole Book",
@@ -243,4 +243,3 @@ const POSTS = [
       { type: "html", text: `<p><em>More on how legalism operates is in the <a href="glossary.html">glossary</a>, and several stories on this site describe it firsthand. If you'd like to share your own experience, <a href="submit.html">the submission form</a> is anonymous by default.</em></p>` }
     ]
   }
-];
