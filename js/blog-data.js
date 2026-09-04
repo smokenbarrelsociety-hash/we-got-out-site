@@ -227,7 +227,7 @@ const POSTS = [
     id: "when-scripture-is-weaponized",
     title: "The Verse They Used Against You Was Never the Whole Book",
     subtitle: "A verse can be quoted correctly and still be a lie. This is about the difference, and what it costs to learn it.",
-    date: "2026-08-09",
+    date: "2026-09-04",
     tags: ["Spiritual Abuse", "Legalism", "Church Discipline", "Faith After"],
     excerpt: "The words themselves are often accurate. Nobody handed us a forgery. What we were handed was a fragment, lifted out of the room it was built for, and bolted onto rules that were never in the text at all.",
     body: [
