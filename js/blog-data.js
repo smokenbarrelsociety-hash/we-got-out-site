@@ -243,3 +243,4 @@ const POSTS = [
       { type: "html", text: `<p><em>More on how legalism operates is in the <a href="glossary.html">glossary</a>, and several stories on this site describe it firsthand. If you'd like to share your own experience, <a href="submit.html">the submission form</a> is anonymous by default.</em></p>` }
     ]
   }
+  ];
