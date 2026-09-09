@@ -247,7 +247,7 @@ const POSTS = [
     id: "anatomy-of-a-loving-ultimatum",
     title: "The Anatomy of a \"Loving\" Ultimatum",
     subtitle: "Breaking down a real text message from family still inside, line by line",
-    date: "2026-09-04",
+    date: "2026-09-09",
     tags: ["Shunning", "Family Estrangement", "Church Discipline", "Guilt and Shame"],
     excerpt: "A short text from family still inside a high-control group, and a look at what each sentence is actually doing underneath the language of love and concern.",
     body: [
