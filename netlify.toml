@@ -1,0 +1,51 @@
+[build]
+  command = "node build.js"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Old shared links looked like /story.html?id=abc (or /story?id=abc). Send them
+# to the new permanent URL. "force" is needed because story.html still exists
+# as a fallback template.
+[[redirects]]
+  from = "/story.html"
+  to = "/story/:id"
+  status = 301
+  force = true
+  query = {id = ":id"}
+
+[[redirects]]
+  from = "/story"
+  to = "/story/:id"
+  status = 301
+  force = true
+  query = {id = ":id"}
+
+[[redirects]]
+  from = "/post.html"
+  to = "/post/:id"
+  status = 301
+  force = true
+  query = {id = ":id"}
+
+[[redirects]]
+  from = "/post"
+  to = "/post/:id"
+  status = 301
+  force = true
+  query = {id = ":id"}
+
+[[redirects]]
+  from = "/document.html"
+  to = "/document/:id"
+  status = 301
+  force = true
+  query = {id = ":id"}
+
+[[redirects]]
+  from = "/document"
+  to = "/document/:id"
+  status = 301
+  force = true
+  query = {id = ":id"}
