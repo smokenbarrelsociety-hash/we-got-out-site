@@ -92,7 +92,7 @@ function ensureDir(p) {
 function copyTree(src, dst, top) {
   ensureDir(dst);
   for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
-    if (top && SKIP_COPY.has(entry.name)) continue;
+    if (top && (SKIP_COPY.has(entry.name) || entry.name.startsWith('.'))) continue; // also skips .netlify, .git, etc.
     const s = path.join(src, entry.name);
     const d = path.join(dst, entry.name);
     if (entry.isDirectory()) copyTree(s, d, false);
